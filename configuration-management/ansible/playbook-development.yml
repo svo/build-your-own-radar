@@ -12,6 +12,8 @@
 
   roles:
     - git
+    - nodejs
+    - cypress
     - vim
     - python
     - ansible

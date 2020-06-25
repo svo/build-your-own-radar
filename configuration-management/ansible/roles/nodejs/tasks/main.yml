@@ -1,0 +1,15 @@
+- name: Install requirements
+  apt: pkg=ca-certificates
+  become: yes
+
+- name: Get nodejs setup script
+  get_url: url=https://deb.nodesource.com/setup_12.x dest=/nodejs-installer
+  become: yes
+
+- name: Setup nodejs
+  command: /bin/bash /nodejs-installer
+  become: yes
+
+- name: Install nodejs
+  apt: pkg=nodejs state=latest
+  become: yes
