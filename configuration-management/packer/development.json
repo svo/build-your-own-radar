@@ -45,7 +45,7 @@
     },
     {
       "type": "ansible",
-      "user": "root",
+      "user": "vagrant",
       "playbook_file": "configuration-management/ansible/playbook-development.yml",
       "extra_arguments": [
         "--extra-vars",
