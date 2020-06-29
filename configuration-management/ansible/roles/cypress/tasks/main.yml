@@ -1,0 +1,6 @@
+- name: Install requirements
+  apt: pkg=xvfb,libnss3,libgdk-pixbuf2.0-0,packagekit-gtk3-module,libasound2,libgtk-3-0,libxtst6,libxss1
+  become: yes
+
+- name: Install cypress
+  npm: name=cypress version=3.7.0 path=~/.npm/
