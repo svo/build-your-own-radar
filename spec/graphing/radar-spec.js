@@ -111,8 +111,8 @@ xdescribe('tr.graphing.Radar', function () {
 
       radar = new tr.models.Radar()
       spyOn(radar, 'rings').and.returnValue([
-        new tr.models.Ring('Adopt'),
-        new tr.models.Ring('Hold')
+        new tr.models.Ring('Standard'),
+        new tr.models.Ring('Remove')
       ])
       radarGraph = new tr.graphing.Radar(500, radar)
       radarGraph.init()
@@ -144,12 +144,12 @@ xdescribe('tr.graphing.Radar', function () {
       expect(svg.append).toHaveBeenCalledWith('text')
       expect(svg.attr).toHaveBeenCalledWith('y', center + 4)
       expect(svg.attr).toHaveBeenCalledWith('x', 0 + 10)
-      expect(svg.text).toHaveBeenCalledWith('Adopt')
+      expect(svg.text).toHaveBeenCalledWith('Standard')
 
       expect(svg.append).toHaveBeenCalledWith('text')
       expect(svg.attr).toHaveBeenCalledWith('y', center + 4)
       expect(svg.attr).toHaveBeenCalledWith('x', 0 + (center / 2) + 10)
-      expect(svg.text).toHaveBeenCalledWith('Hold')
+      expect(svg.text).toHaveBeenCalledWith('Remove')
     }).pend('This references very old code that no longer exists the tests for graphing will have to be rewritten')
 
     it('adds the name of each ring for the right side', function () {
@@ -161,13 +161,13 @@ xdescribe('tr.graphing.Radar', function () {
       expect(svg.attr).toHaveBeenCalledWith('y', center + 4)
       expect(svg.attr).toHaveBeenCalledWith('x', 500 - 10)
       expect(svg.attr).toHaveBeenCalledWith('text-anchor', 'end')
-      expect(svg.text).toHaveBeenCalledWith('Adopt')
+      expect(svg.text).toHaveBeenCalledWith('Standard')
 
       expect(svg.append).toHaveBeenCalledWith('text')
       expect(svg.attr).toHaveBeenCalledWith('y', center + 4)
       expect(svg.attr).toHaveBeenCalledWith('x', 500 - (center / 2) - 10)
       expect(svg.attr).toHaveBeenCalledWith('text-anchor', 'end')
-      expect(svg.text).toHaveBeenCalledWith('Hold')
+      expect(svg.text).toHaveBeenCalledWith('Remove')
     }).pend('This references very old code that no longer exists the tests for graphing will have to be rewritten')
   })
 });

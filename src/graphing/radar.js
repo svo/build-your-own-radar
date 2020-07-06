@@ -485,7 +485,7 @@ const Radar = function (size, radar) {
       .classed('search-box', true)
       .append('input')
       .attr('id', 'auto-complete')
-      .attr('placeholder', 'Search')
+      .attr('placeremoveer', 'Search')
       .classed('search-radar', true)
 
     AutoComplete('#auto-complete', quadrants, searchBlip)

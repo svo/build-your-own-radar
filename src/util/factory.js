@@ -293,7 +293,7 @@ function plotForm (content) {
   form.append('input')
     .attr('type', 'text')
     .attr('name', 'sheetId')
-    .attr('placeholder', 'e.g. https://docs.google.com/spreadsheets/d/<sheetid> or hosted CSV file')
+    .attr('placeremoveer', 'e.g. https://docs.google.com/spreadsheets/d/<sheetid> or hosted CSV file')
     .attr('required', '')
 
   form.append('button')

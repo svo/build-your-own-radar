@@ -6,7 +6,7 @@
   "scripts": {
     "test": "standard --fix && nyc jasmine",
     "test:lint": "npx standard",
-    "dev": "webpack-dev-server --mode development --inline",
+    "dev": "webpack-dev-server --mode development --host 0.0.0.0 --disableHostCheck true --inline",
     "build": "webpack --mode production",
     "end_to_end_test": "node_modules/.bin/cypress run --env host=$TEST_URL",
     "start": "node_modules/.bin/cypress open --env host=$TEST_URL"
@@ -49,7 +49,8 @@
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.9.0",
     "xmlhttprequest": "^1.8.0",
-    "yargs": "^15.0.2"
+    "yargs": "^15.0.2",
+    "copy-webpack-plugin": "^6.0.3"
   },
   "dependencies": {
     "chance": "^1.0.18",

@@ -7,6 +7,7 @@ const args = require('yargs').argv
 
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const CopyPlugin = require('copy-webpack-plugin')
 const postcssPresetEnv = require('postcss-preset-env')
 const cssnano = require('cssnano')
 
@@ -39,6 +40,9 @@ const plugins = [
     chunks: ['common'],
     inject: 'body',
     filename: 'error.html'
+  }),
+  new CopyPlugin({
+    patterns: [{ from: './input.csv', to: 'input.csv' }]
   }),
   new webpack.DefinePlugin({
     'process.env.CLIENT_ID': JSON.stringify(process.env.CLIENT_ID),

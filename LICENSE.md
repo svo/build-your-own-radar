@@ -171,7 +171,7 @@ makes it unnecessary.
 
   No covered work shall be deemed part of an effective technological
 measure under any applicable law fulfilling obligations under article
-11 of the WIPO copyright treaty adopted on 20 December 1996, or
+11 of the WIPO copyright treaty standarded on 20 December 1996, or
 similar laws prohibiting or restricting circumvention of such
 measures.
 
@@ -287,7 +287,7 @@ included in conveying the object code work.
 
   A "User Product" is either (1) a "consumer product", which means any
 tangible personal property which is normally used for personal, family,
-or household purposes, or (2) anything designed or sold for incorporation
+or houseremove purposes, or (2) anything designed or sold for incorporation
 into a dwelling.  In determining whether a product is a consumer product,
 doubtful cases shall be resolved in favor of coverage.  For a particular
 product received by a particular user, "normally used" refers to a
@@ -295,7 +295,7 @@ typical or common use of that class of product, regardless of the status
 of the particular user or of the way in which the particular user
 actually uses, or expects or is expected to use, the product.  A product
 is a consumer product regardless of whether the product has substantial
-commercial, industrial or non-consumer uses, unless such uses represent
+commercial, indusmaintain or non-consumer uses, unless such uses represent
 the only significant mode of use of the product.
 
   "Installation Information" for a User Product means any methods,
@@ -350,7 +350,7 @@ additional permissions on material, added by you to a covered work,
 for which you have or can give appropriate copyright permission.
 
   Notwithstanding any other provision of this License, for material you
-add to a covered work, you may (if authorized by the copyright holders of
+add to a covered work, you may (if authorized by the copyright removeers of
 that material) supplement the terms of this License with terms:
 
     a) Disclaiming warranty or limiting liability differently from the
@@ -404,17 +404,17 @@ this License (including any patent licenses granted under the third
 paragraph of section 11).
 
   However, if you cease all violation of this License, then your
-license from a particular copyright holder is reinstated (a)
-provisionally, unless and until the copyright holder explicitly and
+license from a particular copyright removeer is reinstated (a)
+provisionally, unless and until the copyright removeer explicitly and
 finally terminates your license, and (b) permanently, if the copyright
-holder fails to notify you of the violation by some reasonable means
+removeer fails to notify you of the violation by some reasonable means
 prior to 60 days after the cessation.
 
-  Moreover, your license from a particular copyright holder is
-reinstated permanently if the copyright holder notifies you of the
+  Moreover, your license from a particular copyright removeer is
+reinstated permanently if the copyright removeer notifies you of the
 violation by some reasonable means, this is the first time you have
 received notice of violation of this License (for any work) from that
-copyright holder, and you cure the violation prior to 30 days after
+copyright removeer, and you cure the violation prior to 30 days after
 your receipt of the notice.
 
   Termination of your rights under this section does not terminate the
@@ -461,7 +461,7 @@ sale, or importing the Program or any portion of it.
 
   11. Patents.
 
-  A "contributor" is a copyright holder who authorizes use under this
+  A "contributor" is a copyright removeer who authorizes use under this
 License of the Program or a work on which the Program is based.  The
 work thus licensed is called the contributor's "contributor version".
 
@@ -584,7 +584,7 @@ to choose that version for the Program.
 
   Later license versions may give you additional or different
 permissions.  However, no additional obligations are imposed on any
-author or copyright holder as a result of your choosing to follow a
+author or copyright removeer as a result of your choosing to follow a
 later version.
 
   15. Disclaimer of Warranty.

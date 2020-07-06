@@ -106,7 +106,7 @@ describe('Radar', function () {
     var firstQuadrant, secondQuadrant, radar, firstRing
 
     beforeEach(function () {
-      firstRing = new Ring('Adopt', 0)
+      firstRing = new Ring('Standard', 0)
       firstQuadrant = new Quadrant('First')
       secondQuadrant = new Quadrant('Second')
       firstQuadrant.add([
@@ -154,8 +154,8 @@ describe('Radar', function () {
     var quadrant, radar, firstRing, secondRing, otherQuadrant
 
     beforeEach(function () {
-      firstRing = new Ring('Adopt', 0)
-      secondRing = new Ring('Hold', 1)
+      firstRing = new Ring('Standard', 0)
+      secondRing = new Ring('Remove', 1)
       quadrant = new Quadrant('Fourth')
       otherQuadrant = new Quadrant('Other')
       radar = new Radar()
