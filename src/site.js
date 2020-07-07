@@ -3,6 +3,6 @@ require('./images/logo.png')
 require('./images/radar_legend.png')
 require('./gtm.js')
 
-const GoogleSheetInput = require('./util/factory')
+const StaticInput = require('./util/local-factory')
 
-GoogleSheetInput().build()
+StaticInput().build()
