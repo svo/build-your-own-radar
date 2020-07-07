@@ -12,9 +12,9 @@
 
   roles:
     - git
+    - vim
     - nodejs
     - cypress
-    - vim
     - python
     - ansible
     - docker

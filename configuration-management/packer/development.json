@@ -1,6 +1,6 @@
 {
   "variables": {
-    "ansible_host": "packer-buildnode",
+    "ansible_host": "packer-development",
     "ansible_connection": "docker"
   },
   "builders": [

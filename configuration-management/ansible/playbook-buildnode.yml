@@ -4,3 +4,15 @@
   roles:
     - nodejs
     - cypress
+    - python
+    - ansible
+    - docker
+    - packer
+
+  post_tasks:
+    - name: Set python3 as default python
+      alternatives:
+        name: python
+        link: /usr/bin/python
+        path: /usr/bin/python3
+      become: yes
