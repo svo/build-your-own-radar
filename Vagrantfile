@@ -20,7 +20,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     SHELL
 
     docker.vm.provider :docker do |d|
-      d.image = 'docker.myob.com/sme-employers/build-your-own-radar-development'
+      d.image = 'svanosselaer/build-your-own-radar-development'
       d.remains_running = true
       d.has_ssh = true
       d.pull = true

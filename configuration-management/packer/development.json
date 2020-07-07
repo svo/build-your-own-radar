@@ -57,7 +57,7 @@
     [
       {
         "type": "docker-tag",
-        "repository": "docker.myob.com/sme-employers/build-your-own-radar-development",
+        "repository": "svanosselaer/build-your-own-radar-development",
         "tag": "latest"
       }
     ]
