@@ -1,7 +1,6 @@
 /* eslint no-constant-condition: "off" */
 
 const d3 = require('d3')
-const Tabletop = require('tabletop')
 const _ = {
   map: require('lodash/map'),
   uniqBy: require('lodash/uniqBy'),
@@ -15,11 +14,8 @@ const Quadrant = require('../models/quadrant')
 const Ring = require('../models/ring')
 const Blip = require('../models/blip')
 const GraphingRadar = require('../graphing/radar')
-const QueryParams = require('./queryParamProcessor')
 const MalformedDataError = require('../exceptions/malformedDataError')
-const SheetNotFoundError = require('../exceptions/sheetNotFoundError')
 const ContentValidator = require('./contentValidator')
-const Sheet = require('./sheet')
 const ExceptionMessages = require('./exceptionMessages')
 
 const plotRadar = function (title, blips, currentRadarName, alternativeRadars) {
@@ -97,12 +93,6 @@ const CSVDocument = function (url) {
   return self
 }
 
-const DomainName = function (url) {
-  var search = /.+:\/\/([^\\/]+)/
-  var match = search.exec(decodeURIComponent(url.replace(/\+/g, ' ')))
-  return match == null ? null : match[1]
-}
-
 const FileName = function (url) {
   var search = /([^\\/]+)$/
   var match = search.exec(decodeURIComponent(url.replace(/\+/g, ' ')))
@@ -118,7 +108,7 @@ const StaticInput = function () {
   var sheet
 
   self.build = function () {
-    sheet = CSVDocument(window.location.href + "input.csv")
+    sheet = CSVDocument(window.location.href + 'input.csv')
     sheet.init().build()
   }
 
