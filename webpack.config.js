@@ -41,9 +41,6 @@ const plugins = [
     inject: 'body',
     filename: 'error.html'
   }),
-  new CopyPlugin({
-    patterns: [{ from: './input.csv', to: 'input.csv' }]
-  }),
   new webpack.DefinePlugin({
     'process.env.CLIENT_ID': JSON.stringify(process.env.CLIENT_ID),
     'process.env.API_KEY': JSON.stringify(process.env.API_KEY),

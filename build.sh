@@ -1,6 +1,6 @@
 #!/bin/bash
 
-rm -rf resources &&
+rm -rf resources dist &&
 
 npm install &&
 
