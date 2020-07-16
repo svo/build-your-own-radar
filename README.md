@@ -51,7 +51,7 @@ cd /vagrant
 ./run.sh
 ```
 
-Note: uses the `input.csv` file in the root directory of the repository.
+Note: uses the `radar.csv` file in the root directory of the repository.
 
 ## Setting Up Your Data
 
@@ -65,7 +65,7 @@ Apache Kylin,trial,platforms,TRUE,"Apache Kylin is an open source analytics solu
 JSF,remove,languages & frameworks,FALSE,"We continue to see teams run into trouble using JSF ..."
 ```
 
-Note: use the `input.csv` file in the root directory of the repository.
+Note: use the `radar.csv` file in the root directory of the repository.
 
 ## Building You Radar
 

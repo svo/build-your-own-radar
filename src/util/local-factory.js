@@ -108,7 +108,7 @@ const StaticInput = function () {
   var sheet
 
   self.build = function () {
-    sheet = CSVDocument(window.location.href + 'input.csv')
+    sheet = CSVDocument(window.location.href + 'radar.csv')
     sheet.init().build()
   }
 
